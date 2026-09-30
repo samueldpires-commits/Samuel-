@@ -1,0 +1,23 @@
+{
+  "name": "samuel",
+  "version": "1.0.0",
+  "description": "Site com autenticação segura (login, registro e dashboard)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "gen-secret": "node -e \"console.log(require('crypto').randomBytes(48).toString('hex'))\""
+  },
+  "license": "ISC",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "express-validator": "^7.2.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite3": "^5.1.7"
+  }
+}
